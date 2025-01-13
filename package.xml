@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Quality Fishing</title>
+  <id>omegaplatinum.elin.qualityfishing</id>
+  <author>OmegaPlatinum</author>
+  <loadPriority>100</loadPriority>
+  <description>
+    Adds fish quality and levels based on player's fishing level.
+    プレイヤーの釣りレベルに基づいて魚の品質とレベルを追加します。
+
+    [h1] Features [/h1]
+    [list]
+    [*] Adds fish quality based on the player's fishing level.
+    [*] Adds fish levels based on the player's fishing level.
+    [/list]
+
+    [h1] Compatibility [/h1]
+    This mod works with existing save files.
+
+    [h1] Configuration Variables [/h1]
+
+    [h2] EnableQuality [/h2]
+    Enable or disable adjusting the quality of fish based on player's fishing level.
+    [code] Default: true [/code]
+
+    [h2] EnableLevel [/h2]
+    Enable or disable leveling up fish based on player's fishing level.
+    [code] Default: true [/code]
+
+    [h1] Configuration File Location [/h1]
+    [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
+
+    Supports Game Version: 0.23.75.
+
+    [h1] 特徴 [/h1]
+    [list]
+    [*] プレイヤーの釣りレベルに基づいて魚の品質を追加します。
+    [*] プレイヤーの釣りレベルに基づいて魚のレベルを追加します。
+    [/list]
+
+    [h1] 互換性 [/h1]
+    このMODは既存のセーブデータと互換性があります。
+
+    [h1] 設定変数 [/h1]
+
+    [h2] EnableQuality [/h2]
+    プレイヤーレベルに基づいて魚の品質を調整する機能を有効または無効にします。
+    [code] デフォルト: true [/code]
+
+    [h2] EnableLevel [/h2]
+    プレイヤーレベルに基づいて魚をレベルアップする機能を有効または無効にします。
+    [code] デフォルト: true [/code]
+
+    [h1] 設定ファイルの場所 [/h1]
+    [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
+
+    対応ゲームバージョン: 0.23.75
+  </description>
+  <tags>General,Balance</tags>
+  <visibility>Public</visibility>
+  <version>0.23.75</version>
+</Meta>
