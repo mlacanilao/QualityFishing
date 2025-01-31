@@ -7,7 +7,7 @@ namespace QualityFishing
     {
         internal const string Guid = "omegaplatinum.elin.qualityfishing";
         internal const string Name = "Quality Fishing";
-        internal const string Version = "1.0.0.2";
+        internal const string Version = "1.2.0.2";
     }
 
     [BepInPlugin(GUID: ModInfo.Guid, Name: ModInfo.Name, Version: ModInfo.Version)]

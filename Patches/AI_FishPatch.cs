@@ -16,16 +16,15 @@ namespace QualityFishing
             int fishingLevel = c.Evalue(ele: 245);
             bool enableQuality = QualityFishingConfig.EnableQuality?.Value ?? true;
             bool enableLevel = QualityFishingConfig.EnableLevel?.Value ?? true;
-
+            
             if (enableQuality == true)
             {
-                int quality = Mathf.Min(a: fishingLevel, b: 50);
-                __result.elements?.SetBase(id: 2, v: quality, potential: 0);
+                __result.elements?.SetBase(id: 2, v: fishingLevel, potential: 0);
             }
-
+            
             if (enableLevel == true)
             {
-                TraitSeed.LevelSeed(t: __result, obj: null, num: fishingLevel);
+                CraftUtilOmega.Level(t: __result, obj: null, num: fishingLevel);
             }
         }
     }
