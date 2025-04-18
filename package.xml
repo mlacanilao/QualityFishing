@@ -12,6 +12,7 @@
     [list]
     [*] Adds fish quality based on the player's fishing level.
     [*] Adds fish levels based on the player's fishing level.
+    [*] Optionally enables vanilla-style scaling, reducing fishing level impact by dividing it by 10 for more balanced results.
     [/list]
 
     [h1] Compatibility [/h1]
@@ -19,23 +20,28 @@
 
     [h1] Configuration Variables [/h1]
 
-    [h2] EnableQuality [/h2]
+    [h2] Enable Quality [/h2]
     Enable or disable adjusting the quality of fish based on player's fishing level.
     [code] Default: true [/code]
 
-    [h2] EnableLevel [/h2]
+    [h2] Enable Level [/h2]
     Enable or disable leveling up fish based on player's fishing level.
     [code] Default: true [/code]
+
+    [h2] Enable Vanilla Level Scaling [/h2]
+    Enable or disable vanilla-style scaling for fishing level. When enabled, fishing level is divided by 10 for more balanced quality and level adjustments.
+    [code] Default: false [/code]
 
     [h1] Configuration File Location [/h1]
     [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
 
-    Supports Game Version: 0.23.83.
+    Supports Game Version: 0.23.120
 
     [h1] 特徴 [/h1]
     [list]
     [*] プレイヤーの釣りレベルに基づいて魚の品質を追加します。
     [*] プレイヤーの釣りレベルに基づいて魚のレベルを追加します。
+    [*] オプションでバニラ風のスケーリングを有効にでき、釣りレベルを10で割ることで影響を抑え、よりバランスの取れた結果になります。
     [/list]
 
     [h1] 互換性 [/h1]
@@ -43,20 +49,24 @@
 
     [h1] 設定変数 [/h1]
 
-    [h2] EnableQuality [/h2]
+    [h2] Enable Quality [/h2]
     プレイヤーレベルに基づいて魚の品質を調整する機能を有効または無効にします。
     [code] デフォルト: true [/code]
 
-    [h2] EnableLevel [/h2]
+    [h2] Enable Level [/h2]
     プレイヤーレベルに基づいて魚をレベルアップする機能を有効または無効にします。
     [code] デフォルト: true [/code]
+
+    [h2] Enable Vanilla Level Scaling [/h2]
+    釣りレベルのスケーリングをバニラ風に調整する機能を有効または無効にします。有効にすると、釣りレベルは10で割られ、品質やレベルの上昇がより抑えられます。
+    [code] デフォルト: false [/code]
 
     [h1] 設定ファイルの場所 [/h1]
     [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
 
-    対応ゲームバージョン: 0.23.83
+    対応ゲームバージョン: 0.23.120
   </description>
   <tags>General,Balance</tags>
   <visibility>Public</visibility>
-  <version>0.23.83</version>
+  <version>0.23.120</version>
 </Meta>

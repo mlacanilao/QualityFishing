@@ -18,22 +18,24 @@ namespace QualityFishing
 
         private static void ModRandomFoodEnc(Thing t)
         {
-            Element foodElement = null;
+            List<Element> foodElements = new List<Element>();
+
             foreach (Element element in t.elements.dict.Values)
             {
                 if (element.IsFoodTrait)
                 {
-                    foodElement = element;
+                    foodElements.Add(item: element);
                 }
             }
-            if (foodElement == null)
+            
+            if (foodElements.Count == 0)
             {
                 return;
             }
-            t.elements.ModBase(ele: foodElement.id, v: 6);
-            if (foodElement.Value > 60)
+            
+            foreach (Element element in foodElements)
             {
-                t.elements.SetTo(foodElement.id, 60);
+                t.elements.ModBase(ele: element.id, v: 6);
             }
         }
     }

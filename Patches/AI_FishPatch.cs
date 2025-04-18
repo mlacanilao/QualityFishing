@@ -13,9 +13,16 @@ namespace QualityFishing
                 return;
             }
             
-            int fishingLevel = c.Evalue(ele: 245);
             bool enableQuality = QualityFishingConfig.EnableQuality?.Value ?? true;
             bool enableLevel = QualityFishingConfig.EnableLevel?.Value ?? true;
+            bool enableVanillaLevelScaling = QualityFishingConfig.EnableVanillaLevelScaling?.Value ?? false;
+            
+            int fishingLevel = c.Evalue(ele: 245);
+            
+            if (enableVanillaLevelScaling == true)
+            {
+                fishingLevel /= 10;
+            }
             
             if (enableQuality == true)
             {
