@@ -18,6 +18,12 @@
     [h1] Compatibility [/h1]
     This mod works with existing save files.
 
+    [h1] Requirements [/h1]
+    This mod requires the [b]Mod Options[/b] mod only for accessing the Config menu. The core functionality of this mod will still work without it. Please subscribe to the [b]Mod Options[/b] mod for menu-based configuration:
+    [list]
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3381182341]https://steamcommunity.com/sharedfiles/filedetails/?id=3381182341[/url]
+    [/list]
+
     [h1] Configuration Variables [/h1]
 
     [h2] Enable Quality [/h2]
@@ -46,6 +52,12 @@
 
     [h1] 互換性 [/h1]
     このMODは既存のセーブデータと互換性があります。
+
+    [h1] 必須MOD [/h1]
+    このMODは [b]Mod Options[/b] MOD が必要です。ただし、Config メニューにアクセスするためだけです。主要な機能はこれなしでも動作します。[b]Mod Options[/b] MOD をサブスクライブするには、以下のリンクを参照してください：
+    [list]
+    [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3381182341]https://steamcommunity.com/sharedfiles/filedetails/?id=3381182341[/url]
+    [/list]
 
     [h1] 設定変数 [/h1]
 
