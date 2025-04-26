@@ -63,6 +63,16 @@ namespace QualityFishing
                 {
                     QualityFishingConfig.EnableVanillaLevelScaling.Value = isChecked;
                 };
+                
+                var slider = builder.GetPreBuild<OptSlider>(id: "slider01");
+                slider.Title = QualityFishingConfig.LevelScaling.Value.ToString();
+                slider.Value = QualityFishingConfig.LevelScaling.Value;
+                slider.Step = 1;
+                slider.OnValueChanged += v =>
+                {
+                    slider.Title = v.ToString();
+                    QualityFishingConfig.LevelScaling.Value = (int)v;
+                };
             };
         }
     }

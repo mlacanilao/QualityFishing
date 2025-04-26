@@ -8,6 +8,7 @@ namespace QualityFishing
         internal static ConfigEntry<bool> EnableQuality;
         internal static ConfigEntry<bool> EnableLevel;
         internal static ConfigEntry<bool> EnableVanillaLevelScaling;
+        internal static ConfigEntry<int> LevelScaling;
         public static string XmlPath { get; private set; }
         public static string TranslationXlsxPath { get; private set; }
 
@@ -42,11 +43,23 @@ namespace QualityFishing
                 key: "Enable Vanilla Level Scaling",
                 defaultValue: false,
                 description: "Enable or disable vanilla-style scaling for fishing level.\n" +
-                             "When enabled, fishing level is divided by 10 for more balanced quality and level adjustments.\n" +
+                             "When enabled, fishing level is divided by the configured Level Scaling value.\n" +
                              "釣りレベルのスケーリングをバニラ風に調整する機能を有効または無効にします。\n" +
-                             "有効にすると、釣りレベルは10で割られ、品質やレベルの上昇がより抑えられます。\n" +
+                             "有効にすると、釣りレベルが設定されたスケーリング除数で割られ、品質やレベルの上昇がより抑えられます。\n" +
                              "启用或禁用类似原版的钓鱼等级缩放。\n" +
-                             "启用后，钓鱼等级将除以10，以实现更平衡的质量和等级调整。"
+                             "启用后，钓鱼等级将根据配置的缩放除数进行缩放，以实现更平衡的质量和等级调整。"
+            );
+            
+            LevelScaling = config.Bind(
+                section: ModInfo.Name,
+                key: "Level Scaling",
+                defaultValue: 10,
+                description: "Sets the divisor value for fishing level scaling.\n" +
+                             "For example, setting it to 10 divides the fishing level by 10 instead of 1.\n" +
+                             "釣りレベルのスケーリング除数を設定します。\n" +
+                             "例えば、10に設定すると釣りレベルが10で割られ、1に設定するとそのままになります。\n" +
+                             "设置钓鱼等级缩放的除数。\n" +
+                             "例如，设置为10时，钓鱼等级将除以10，设置为1时则不进行缩放。"
             );
         }
         

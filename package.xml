@@ -12,7 +12,7 @@
     [list]
     [*] Adds fish quality based on the player's fishing level.
     [*] Adds fish levels based on the player's fishing level.
-    [*] Optionally enables vanilla-style scaling, reducing fishing level impact by dividing it by 10 for more balanced results.
+    [*] Optionally enables level scaling, reducing fishing level impact by dividing it by a configurable value (default 10) for more balanced results.
     [/list]
 
     [h1] Compatibility [/h1]
@@ -35,19 +35,23 @@
     [code] Default: true [/code]
 
     [h2] Enable Vanilla Level Scaling [/h2]
-    Enable or disable vanilla-style scaling for fishing level. When enabled, fishing level is divided by 10 for more balanced quality and level adjustments.
+    Enable or disable level scaling for fishing level. When enabled, fishing level is divided by the configured Level Scaling value for more balanced quality and level adjustments.
     [code] Default: false [/code]
+
+    [h2] Level Scaling [/h2]
+    Sets the divisor value for fishing level scaling. For example, setting it to 10 divides the fishing level by 10 instead of 1.
+    [code] Default: 10 [/code]
 
     [h1] Configuration File Location [/h1]
     [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
 
-    Supports Game Version: 0.23.120
+    Supports Game Version: 0.23.129
 
     [h1] 特徴 [/h1]
     [list]
     [*] プレイヤーの釣りレベルに基づいて魚の品質を追加します。
     [*] プレイヤーの釣りレベルに基づいて魚のレベルを追加します。
-    [*] オプションでバニラ風のスケーリングを有効にでき、釣りレベルを10で割ることで影響を抑え、よりバランスの取れた結果になります。
+    [*] オプションでレベルスケーリングを有効にでき、設定された除数（デフォルトは10）で釣りレベルを割ることで影響を抑え、よりバランスの取れた結果になります。
     [/list]
 
     [h1] 互換性 [/h1]
@@ -70,15 +74,19 @@
     [code] デフォルト: true [/code]
 
     [h2] Enable Vanilla Level Scaling [/h2]
-    釣りレベルのスケーリングをバニラ風に調整する機能を有効または無効にします。有効にすると、釣りレベルは10で割られ、品質やレベルの上昇がより抑えられます。
+    釣りレベルのスケーリングを有効または無効にする機能です。有効にすると、釣りレベルが設定されたスケーリング除数で割られ、品質やレベルの上昇がより抑えられます。
     [code] デフォルト: false [/code]
+
+    [h2] Level Scaling [/h2]
+    釣りレベルのスケーリング除数を設定します。例えば、10に設定すると釣りレベルは10で割られ、1に設定するとそのままになります。
+    [code] デフォルト: 10 [/code]
 
     [h1] 設定ファイルの場所 [/h1]
     [code] Steam\steamapps\common\Elin\BepInEx\config\omegaplatinum.elin.qualityfishing.cfg [/code]
 
-    対応ゲームバージョン: 0.23.120
+    対応ゲームバージョン: 0.23.129
   </description>
   <tags>General,Balance</tags>
   <visibility>Public</visibility>
-  <version>0.23.120</version>
+  <version>0.23.129</version>
 </Meta>

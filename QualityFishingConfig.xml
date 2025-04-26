@@ -13,11 +13,32 @@
                 <contentId>toggle02</contentId>
                 <tooltip>tooltip02</tooltip>
             </toggle>
+        </vlayout>
+
+        <vlayout id="vlayout02" border="true">
+            <title>title02</title>
 
             <toggle id="enableVanillaLevelScalingToggle">
                 <contentId>toggle03</contentId>
                 <tooltip>tooltip03</tooltip>
             </toggle>
+            <topic>topic01</topic>
+            <slider id="slider01" min="1" max="9999" buttons="true">0</slider>
+            <topic>topic02</topic>
+            <one_choice id="dropdown01" type="dropdown">
+                <choice>
+                    <contentId>1</contentId>
+                </choice>
+                <choice>
+                    <contentId>10</contentId>
+                </choice>
+                <choice>
+                    <contentId>100</contentId>
+                </choice>
+                <choice>
+                    <contentId>1000</contentId>
+                </choice>
+            </one_choice>
         </vlayout>
     </hlayout>
 </config>

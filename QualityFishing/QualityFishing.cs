@@ -9,7 +9,7 @@ namespace QualityFishing
     {
         internal const string Guid = "omegaplatinum.elin.qualityfishing";
         internal const string Name = "Quality Fishing";
-        internal const string Version = "2.0.0.1";
+        internal const string Version = "2.1.0.1";
         internal const string ModOptionsGuid = "evilmask.elinplugins.modoptions";
         internal const string ModOptionsAssemblyName = "ModOptions";
     }

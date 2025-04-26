@@ -16,12 +16,13 @@ namespace QualityFishing
             bool enableQuality = QualityFishingConfig.EnableQuality?.Value ?? true;
             bool enableLevel = QualityFishingConfig.EnableLevel?.Value ?? true;
             bool enableVanillaLevelScaling = QualityFishingConfig.EnableVanillaLevelScaling?.Value ?? false;
+            int levelScaling = QualityFishingConfig.LevelScaling?.Value ?? 10;
             
             int fishingLevel = c.Evalue(ele: 245);
             
             if (enableVanillaLevelScaling == true)
             {
-                fishingLevel /= 10;
+                fishingLevel /= Mathf.Max(a: levelScaling, b: 1);
             }
             
             if (enableQuality == true)
